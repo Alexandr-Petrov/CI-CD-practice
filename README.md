@@ -46,10 +46,18 @@ npm run build
 ### Инструкции по настройке:
 
 1. Отправьте этот репозиторий на GitHub
-2. Перейдите в Настройки репозитория → Pages
-3. Установите Source в "Deploy from a branch"
-4. Выберите ветку `gh-pages`
-5. Сохраните и дождитесь первого развертывания
+2. Включите разрешения для GitHub Actions:
+   - Перейдите в Settings → Actions → General
+   - В разделе "Workflow permissions" выберите **"Read and write permissions"**
+   - Сохраните изменения
+3. Отправьте код в ветку `main` - это запустит workflow и создаст ветку `gh-pages`
+4. Настройте GitHub Pages:
+   - Перейдите в Settings → Pages
+   - В разделе "Build and deployment":
+     - **Source:** выберите "Deploy from a branch"
+     - **Branch:** выберите `gh-pages` и `/ (root)` 
+   - Нажмите **Save**
+5. Подождите 1-2 минуты для первого развертывания
 
 Ваше приложение будет доступно по адресу:
 ```
