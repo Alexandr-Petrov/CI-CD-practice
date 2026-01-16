@@ -1,7 +1,7 @@
 import React from 'react';
 
 function App() {
-  const version = process.env.APP_VERSION || '1.0.1';
+  const version = process.env.APP_VERSION || '1.0.0';
 
   return (
     <div className="container">
